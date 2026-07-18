@@ -773,3 +773,59 @@ section {
 .project-card:hover .project-image {
     transform: scale(1.05);
 }
+.hero-description{
+    max-width:550px;
+    margin:25px 0;
+    color:#d6d6d6;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.hero-stats{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.stat-card{
+    width:120px;
+    padding:18px 10px;
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:16px;
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+    border-color:#4ea8ff;
+    box-shadow:0 0 20px rgba(78,168,255,.35);
+}
+
+.stat-card h3{
+    color:#4ea8ff;
+    font-size:26px;
+    margin-bottom:8px;
+}
+
+.stat-card p{
+    color:#ddd;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+.hero-stats{
+    justify-content:center;
+}
+
+.stat-card{
+    width:140px;
+}
+
+}

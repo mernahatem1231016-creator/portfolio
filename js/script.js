@@ -120,7 +120,11 @@ function initializeInteractions() {
 
   const typingTarget = document.querySelector('.typed-text');
   if (typingTarget) {
-    const roles = ['Computer Engineering Student'];
+    const roles = [
+    'Computer Engineering Student',
+    'Learning Flutter',
+    'Learning Cybersecurity'
+];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
