@@ -122,8 +122,7 @@ function initializeInteractions() {
   if (typingTarget) {
     const roles = [
     'Computer Engineering Student',
-    'Learning Flutter',
-    'Learning Cybersecurity'
+    
 ];
     let roleIndex = 0;
     let charIndex = 0;

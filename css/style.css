@@ -685,6 +685,18 @@ section {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+  @media (max-width: 768px) {
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .stat-card {
+    width: 30%;
+    padding: 15px 10px;
+  }
+}
 
   .hero-visual {
     order: -1;
