@@ -685,18 +685,6 @@ section {
   .contact-grid {
     grid-template-columns: 1fr;
   }
-  @media (max-width: 768px) {
-  .stats-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  .stat-card {
-    width: 30%;
-    padding: 15px 10px;
-  }
-}
 
   .hero-visual {
     order: -1;
@@ -839,5 +827,60 @@ section {
 .stat-card{
     width:140px;
 }
+
+}
+.project-actions a{
+    display: inline-block;
+    padding: 15px 34px;  
+    border-radius: 999px;
+
+    background:  0 0 20px rgba(139, 92, 246, 0.2);
+
+    color: #fff;
+
+    font-size: 17px;      
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+.project-actions{
+    margin-top: 35px;
+    display: flex;
+    justify-content: last baseline
+}
+@media (max-width: 768px) {
+
+  .hero-stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .stat-card{
+    padding: 15px 10px;
+  }
+
+  .stat-card h3{
+    font-size: 20px;
+  }
+
+  .stat-card p{
+    font-size: 13px;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .hero-stats{
+    display: flex;
+    flex-wrap: nowrap;      /* يمنع النزول لسطر جديد */
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .stat-card{
+    flex: 1;
+  }
 
 }
