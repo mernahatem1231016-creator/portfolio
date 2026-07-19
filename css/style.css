@@ -372,6 +372,11 @@ section {
   display: grid;
   gap: 1.2rem;
 }
+.project-card{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
 
 .about-grid {
   grid-template-columns: 1.1fr 0.9fr;
@@ -435,7 +440,7 @@ section {
 .project-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 50px;
   margin-top: 1rem;
 }
 
@@ -445,6 +450,8 @@ section {
   background: rgba(59, 130, 246, 0.14);
   color: #dbeafe;
   transition: transform 0.25s ease;
+  font-size:16px;
+   font-weight:600;
 }
 
 .project-actions a:hover {
@@ -818,14 +825,27 @@ section {
     font-size:14px;
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .hero-stats{
-    justify-content:center;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    gap:8px;
 }
 
 .stat-card{
-    width:140px;
+    flex:1;
+    width:auto;
+    padding:14px 6px;
+}
+
+.stat-card h3{
+    font-size:20px;
+}
+
+.stat-card p{
+    font-size:12px;
 }
 
 }
